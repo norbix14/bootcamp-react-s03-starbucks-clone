@@ -2,9 +2,9 @@
   --bg-main: #1e3932;
   --bg-main-secon: #008248;
   --bg-black: #000000;
-  --bg-white-light: #f3f1e7;
   --bg-green-light: #d4e9e2;
-  --bg-white: #f1f8f6;
+  --bg-white-light: #f1f8f6;
+  --bg-white-light-secon: #f3f1e7;
   --ff-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -32,28 +32,34 @@ ul li {
   text-decoration: none;
 }
 
-button {
+button, .btn {
   border: none;
   background: transparent;
   cursor: pointer;
+}
+
+h2, h3, h4, p {
+  color: rgba(0,0,0,0.8);
 }
 
 .active {
   border-bottom: 4px solid var(--bg-main-secon);
 }
 
-.btn {
-  border: none;
-  cursor: pointer;
-}
-
 .bg-main {
   background-color: var(--bg-main);
-  color: #fff;
 }
 
 .color-main {
   color: var(--bg-main);
+}
+
+.color-white {
+  color: var(--bg-white-light);
+}
+
+.color-white-secon {
+  color: var(--bg-white-light-secon);
 }
 
 .bg-main-secon {
@@ -67,6 +73,10 @@ button {
 
 .bg-white-light {
   background-color: var(--bg-white-light);
+}
+
+.bg-white-light-secon {
+  background-color: var(--bg-white-light-secon);
 }
 
 .bg-green-light {
@@ -170,6 +180,7 @@ a:focus {
 
 .sub-nav h3 {
   text-transform: uppercase;
+  color: var(--bg-white-light);
 }
 
 /* welcome */
@@ -182,26 +193,26 @@ a:focus {
   margin-top: 120px;
 }
 
-.description,
-.brand {
+.welcome-description,
+.welcome-brand {
   width: 50%;
   height: 100%;
   padding: 20px;
 }
 
-.description {
+.welcome-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: rgba(0,0,0,0.9);
 }
 
-.description h2 {
+.welcome-description h2 {
   font-size: 2rem;
   text-transform: uppercase;
 }
 
-.description > p {
+.welcome-description > p {
   margin: 20px 0;
   font-size: 1rem;
 }
@@ -231,7 +242,7 @@ a:focus {
   color: var(--bg-main-secon);
 }
 
-.brand {
+.welcome-brand {
   margin: 0 auto;
   overflow: hidden;
   background-image: url(../img/star.png);
@@ -247,6 +258,7 @@ a:focus {
   min-height: 400px;
 }
 
+/* start */
 .start {
   margin: 60px auto 20px auto;
   color: rgba(0,0,0,0.8);
@@ -256,6 +268,7 @@ a:focus {
   margin: 20px auto;
 }
 
+/* steps */
 .steps {
   display: flex;
   justify-content: space-between;
@@ -288,9 +301,179 @@ a:focus {
   margin: 20px auto;
 }
 
-.explanation > p {
+.step-explanation > p {
   font-size: 0.9rem;
   color: rgba(0,0,0,0.8);
+}
+
+/* favorites*/
+.favorites,
+.extras {
+  padding: 50px 10px 0 10px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0 0 ;
+}
+
+.point {
+  padding: 10px;
+  margin: 0 30px;
+}
+
+.point > button {
+  padding-bottom: 10px;
+}
+
+.point p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.point i {
+  color: #cba258;
+  font-size: 0.7rem;
+}
+
+/* products */
+.products {
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-sample, 
+.product-description {
+  width: 50%;
+}
+
+.product-sample {
+  height: 150px;
+}
+
+.product-sample .img-product {
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-description {
+  text-align: left;
+  padding: 0 150px 0 0;
+}
+
+.product-description h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* extras */
+.extras-info {
+  margin: 50px auto;
+  width: 800px;
+}
+
+.extras-info > h2 {
+  margin: 20px auto;
+}
+
+.extra-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.extra-item {
+  padding: 20px;
+  width: 400px;
+}
+
+.extra-header {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.extra-body {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extra-body h3,
+.extra-body p {
+  margin: 10px 0;
+}
+
+/* payments */
+.payments {
+  padding: 50px 0;
+}
+
+/* payments info*/
+.payments-info {
+  margin: 50px auto;
+  width: 800px;
+}
+
+.payments-info h3,
+.payments-info p {
+  margin: 10px 0;
+}
+
+/* payment steps*/
+.payment-steps {
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px auto;
+  padding: 20px 30px;
+}
+
+.payment-step {
+  text-align: left;
+}
+
+.payment-reward {
+  width: 300px;
+  padding: 20px 0;
+}
+
+.payment-reward i {
+  font-size: 0.8rem;
+}
+
+.payment-reward h3 {
+  font-size: 1.3rem;
+}
+
+.payment-reward p {
+  font-size: 0.9rem;
+  margin: 10px auto;
+}
+
+.payment-description {
+  display: flex;
+  width: 400px;
+}
+
+.informative-img {
+  width: 30%;
+  margin: 0 20px 0 0;
+}
+
+.payment-step-explanation {
+  width: 70%;
+}
+
+.payment-step-explanation h3,
+.payment-step-explanation p {
+  margin: 20px auto;
 }
 
 /* media queries */
