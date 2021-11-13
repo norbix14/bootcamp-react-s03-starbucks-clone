@@ -1,0 +1,51 @@
+/* start */
+.start {
+  color: var(--color-black-light);
+  text-align: center;
+}
+
+.getting-started {
+  padding: 60px 0 20px 0;
+}
+
+.start h2, .start p {
+  padding: 10px 0;
+}
+
+/* steps */
+.steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  padding: 30px;
+  color: var(--color-black-light);
+}
+
+.num {
+  border: 1px solid var(--color-main-secondary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.num > p {
+  color: var(--color-main-secondary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info > h4 {
+  margin: 20px auto;
+}
+
+.step-explanation > p {
+  font-size: 0.9rem;
+  color: var(--color-black-light);
+}

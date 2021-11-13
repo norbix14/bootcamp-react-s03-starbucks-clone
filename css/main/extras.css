@@ -1,0 +1,43 @@
+/* extras */
+.extras {
+  padding: 50px 10px 0 10px;
+  text-align: center;
+}
+
+.extras-info {
+  margin: 50px auto;
+  width: 800px;
+}
+
+.extras-info > h2 {
+  margin: 20px auto;
+}
+
+.extra-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.extra-item {
+  padding: 20px;
+  width: 400px;
+}
+
+.extra-header {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.extra-body {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extra-body h3,
+.extra-body p {
+  margin: 10px 0;
+}

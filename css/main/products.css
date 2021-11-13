@@ -1,0 +1,33 @@
+/* products */
+.products {
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-sample, 
+.product-description {
+  width: 50%;
+}
+
+.product-sample {
+  height: 150px;
+}
+
+.product-sample .img-product {
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-description {
+  text-align: left;
+  padding: 0 150px 0 0;
+}
+
+.product-description h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}

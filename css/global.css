@@ -1,0 +1,60 @@
+:root {
+  --bg-main: #1e3932;
+  --bg-main-secondary: #008248;
+  --bg-black: #000000;
+  --bg-green-light: #d4e9e2;
+  --bg-white: #ffffff;
+  --bg-white-light: #f1f8f6;
+  --bg-white-light-secondary: #f3f1e7;
+  --ff-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --color-main: #1e3932;
+  --color-main-secondary: #008248;
+  --color-black: #000000;
+  --color-black-light: rgba(0,0,0,0.8);
+  --color-green-light: #d4e9e2;
+  --color-white: #ffffff;
+  --color-white-light: #f1f8f6;
+  --color-white-light-secondary: #f3f1e7;
+  --color-star: #cba258;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: var(--ff-main);
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+button, .btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--color-black-light);
+}
+
+hr {
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}

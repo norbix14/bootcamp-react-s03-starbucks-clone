@@ -6,7 +6,7 @@
 
 ![Header](screenshots/header.png "Header")
 
-![Main](screenshots/main.png "Main")
+![Start](screenshots/start.png "Start")
 
 ![Favorites](screenshots/favorites.png "Favorites")
 

@@ -1,0 +1,70 @@
+/* payments */
+.payments {
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* payments info*/
+.payments-info {
+  margin: 50px auto;
+  width: 800px;
+}
+
+.payments-info h3,
+.payments-info p {
+  margin: 10px 0;
+}
+
+/* payment steps*/
+.payment-steps {
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px auto;
+  width: 95%;
+  border-bottom: 1px solid #ddd;
+}
+
+.payment-steps:last-child {
+  border-bottom: none;
+}
+
+.payment-step {
+  text-align: left;
+}
+
+.payment-reward {
+  width: 300px;
+  padding: 20px 0;
+}
+
+.payment-reward i {
+  font-size: 0.8rem;
+}
+
+.payment-reward h3 {
+  font-size: 1.3rem;
+}
+
+.payment-reward p {
+  font-size: 0.9rem;
+  margin: 10px auto;
+}
+
+.payment-description {
+  display: flex;
+  width: 400px;
+}
+
+.informative-img {
+  width: 30%;
+  margin: 0 20px 0 0;
+}
+
+.payment-step-explanation {
+  width: 70%;
+}
+
+.payment-step-explanation h3,
+.payment-step-explanation p {
+  margin: 20px auto;
+}
